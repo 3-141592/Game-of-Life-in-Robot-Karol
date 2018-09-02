@@ -1,0 +1,293 @@
+Anweisung markezustein
+wenn istZiegel dann
+aufheben
+*wenn
+schritt
+wenn istmarke dann
+markelöschen
+rechtsdrehen
+rechtsdrehen
+schritt
+rechtsdrehen
+rechtsdrehen
+hinlegen
+sonst
+rechtsdrehen
+rechtsdrehen
+schritt
+rechtsdrehen
+rechtsdrehen
+*wenn
+
+*Anweisung
+
+Anweisung ecketesten
+  wenn IstZiegel
+    dann
+    RechtsDrehen
+    Hinlegen
+    LinksDrehen
+  *wenn
+*Anweisung
+
+
+Anweisung geradetesten
+  wenn IstZiegel
+    dann
+    Schritt
+    RechtsDrehen
+    Hinlegen
+    RechtsDrehen
+    Schritt
+    RechtsDrehen
+    RechtsDrehen
+  *wenn
+*Anweisung
+
+Anweisung zelleaendern
+  wenn IstZiegel
+    dann
+    Aufheben
+    Schritt
+    MarkeSetzen
+  sonst
+    Schritt
+  *wenn
+  LinksDrehen
+  Schritt
+  RechtsDrehen
+  Schritt
+  RechtsDrehen
+  wiederhole 4 mal
+    geradetesten
+    Schritt
+    ecketesten
+    Schritt
+    RechtsDrehen
+  *wiederhole
+  Schritt
+  RechtsDrehen
+
+  wenn IstZiegel(8) dann
+    Aufheben(8)
+    Schritt
+    wenn IstMarke dann
+      MarkeLöschen
+      RechtsDrehen
+      RechtsDrehen
+      Schritt
+      RechtsDrehen
+      RechtsDrehen
+      Hinlegen
+    sonst
+
+      RechtsDrehen
+      RechtsDrehen
+      Schritt
+      RechtsDrehen
+      RechtsDrehen
+    *wenn
+  sonst
+    wenn IstZiegel(7) dann
+      Aufheben(7)
+      Schritt
+      wenn IstMarke dann
+        MarkeLöschen
+        RechtsDrehen
+        RechtsDrehen
+        Schritt
+
+        RechtsDrehen
+        RechtsDrehen
+        Hinlegen
+      sonst
+
+        RechtsDrehen
+        RechtsDrehen
+        Schritt
+        RechtsDrehen
+        RechtsDrehen
+      *wenn
+    sonst
+      wenn IstZiegel(6) dann
+        Aufheben(6)
+        Schritt
+        wenn IstMarke dann
+          MarkeLöschen
+          RechtsDrehen
+          RechtsDrehen
+          Schritt
+
+          RechtsDrehen
+          RechtsDrehen
+          Hinlegen
+        sonst
+
+          RechtsDrehen
+          RechtsDrehen
+          Schritt
+          RechtsDrehen
+          RechtsDrehen
+        *wenn
+      sonst
+        wenn IstZiegel(5) dann
+          Aufheben(5)
+          Schritt
+          wenn IstMarke dann
+            MarkeLöschen
+            RechtsDrehen
+            RechtsDrehen
+            Schritt
+
+            RechtsDrehen
+            RechtsDrehen
+            Hinlegen
+          sonst
+            MarkeSetzen
+            RechtsDrehen
+            RechtsDrehen
+            Schritt
+            RechtsDrehen
+            RechtsDrehen
+          *wenn
+        sonst
+          wenn IstZiegel(4) dann
+            Aufheben(4)
+            Schritt
+            wenn IstMarke dann
+              MarkeLöschen
+              RechtsDrehen
+              RechtsDrehen
+              Schritt
+
+              RechtsDrehen
+              RechtsDrehen
+              Hinlegen
+            sonst
+
+              RechtsDrehen
+              RechtsDrehen
+              Schritt
+              RechtsDrehen
+              RechtsDrehen
+            *wenn
+          sonst
+            wenn IstZiegel(3) dann
+              Aufheben(3)
+              Schritt
+              wenn IstMarke dann
+                RechtsDrehen
+                RechtsDrehen
+                Schritt
+                RechtsDrehen
+                RechtsDrehen
+                Hinlegen
+              sonst
+                MarkeSetzen
+                RechtsDrehen
+                RechtsDrehen
+                Schritt
+                RechtsDrehen
+                RechtsDrehen
+              *wenn
+            sonst
+              wenn IstZiegel(2) dann
+                Aufheben(2)
+                Schritt
+                wenn IstMarke dann
+                  RechtsDrehen
+                  RechtsDrehen
+                  Schritt
+                  RechtsDrehen
+                  RechtsDrehen
+                  Hinlegen
+                sonst
+                  RechtsDrehen
+                  RechtsDrehen
+                  Schritt
+                  RechtsDrehen
+                  RechtsDrehen
+                *wenn
+              sonst
+                wenn IstZiegel(1) dann
+                  Aufheben(1)
+                  Schritt
+                  wenn IstMarke dann
+                    MarkeLöschen
+                    RechtsDrehen
+                    RechtsDrehen
+                    Schritt
+
+                    RechtsDrehen
+                    RechtsDrehen
+                    Hinlegen
+                  sonst
+                    RechtsDrehen
+                    RechtsDrehen
+                    Schritt
+                    RechtsDrehen
+                    RechtsDrehen
+                  *wenn
+                sonst
+                *wenn
+              *wenn
+            *wenn
+          *wenn
+        *wenn
+      *wenn
+    *wenn
+  *wenn
+*Anweisung
+
+
+Programm
+wiederhole 50 mal
+  wiederhole 8 mal
+    wiederhole 8 mal
+      zelleaendern
+      Schritt
+      RechtsDrehen
+      RechtsDrehen
+    *wiederhole
+    RechtsDrehen
+    RechtsDrehen
+    wiederhole solange nicht IstWand
+      Schritt
+    *wiederhole
+    RechtsDrehen
+    Schritt
+    RechtsDrehen
+  *wiederhole
+  rechtsdrehen
+  wiederhole solange nicht istWand
+  schritt
+  *wiederhole
+  rechtsdrehen
+  rechtsdrehen
+  schritt
+  rechtsdrehen
+  wiederhole 8 mal
+    wiederhole 8 mal
+      markezustein
+      schritt
+    *wiederhole
+    RechtsDrehen
+    RechtsDrehen
+    wiederhole solange nicht IstWand
+      Schritt
+    *wiederhole
+    RechtsDrehen
+    Schritt
+    RechtsDrehen
+  *wiederhole
+  rechtsdrehen
+  wiederhole solange nicht IstWand
+  schritt
+  *wiederhole
+  rechtsdrehen
+  rechtsdrehen
+  schritt
+  rechtsdrehen
+  
+*wiederhole
+*Programm
